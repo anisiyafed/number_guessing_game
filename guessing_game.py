@@ -8,7 +8,13 @@ attempts = 0
 
 while True:
     guess = input("Enter your guess: ")
-    guess = int(guess)
+
+    try:
+        guess = int(guess)
+    except ValueError:
+        print("Please enter a number")
+        continue
+
     attempts = attempts + 1
 
     if guess == number_to_guess:
