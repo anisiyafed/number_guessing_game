@@ -1,8 +1,8 @@
+import random
 
 print("Welcome to number guessing game!")
 print("I am thinking of a number between 1 and 100. Take a guess:")
 
-import random
 number_to_guess = random.randint(1, 100)
 attempts = 0
 
